@@ -11,10 +11,12 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollup/ScrollUp';
 import Work from './components/work/Work';
+import Snowfall from 'react-snowfall';
 
 const App = () => {
 	return (
 		<>
+			
 			<Header />
 			<main className='main'>
 				<Home />
@@ -28,6 +30,17 @@ const App = () => {
 			</main>
 			<Footer />
 			<ScrollUp />
+			<Snowfall 
+				color='#000'
+				snowflakeCount={150}
+
+				style={{
+					position: 'fixed',
+					width: '100vw',
+					height: '100vh',
+					zIndex: '-1'
+				}}
+			/>
 		</>
 	);
 }

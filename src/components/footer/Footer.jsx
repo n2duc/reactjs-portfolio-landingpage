@@ -46,7 +46,7 @@ const Footer = () => {
                     </a>
                 </div>
 
-                <span className="footer__copy">&#169; 2023 Coding. All Rights Reserved.</span>
+                <span className="footer__copy">&#169; 2023 N2DCoding. All Rights Reserved.</span>
             </div>
         </footer>
     )
