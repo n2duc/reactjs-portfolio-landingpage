@@ -13,6 +13,12 @@ import ScrollUp from './components/scrollup/ScrollUp';
 import Work from './components/work/Work';
 import Snowfall from 'react-snowfall';
 
+import snowLogo from './assets/snow.png'
+const snowFlake = document.createElement('img')
+snowFlake.src = snowLogo
+
+const images = [snowFlake]
+
 const App = () => {
 	return (
 		<>
@@ -31,15 +37,18 @@ const App = () => {
 			<Footer />
 			<ScrollUp />
 			<Snowfall 
-				color='#000'
-				snowflakeCount={150}
-
 				style={{
 					position: 'fixed',
 					width: '100vw',
 					height: '100vh',
 					zIndex: '-1'
 				}}
+				snowflakeCount={80}
+				radius={[10, 20]}
+				speed={[0.5, 2.5]}
+				wind={[-0.5, 2]}
+				images={images}
+				rotationSpeed={[-1, 1]}
 			/>
 		</>
 	);
